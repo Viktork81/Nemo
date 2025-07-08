@@ -28,10 +28,15 @@ Human-like autonomy: Detects failed steps and retries/fixes them automatically
 🛠️ Project Structure
 
 /handlers           <- Contains all modular commands (e.g. read_file.py, browse_folders.py)
+
 log.txt             <- History of recent prompts and reasoning
+
 priming_prompt.txt  <- Initial memory, current tools, instructions for LLM
-main.py             <- CLI interface and execution loop
+
+cli_tool.py             <- CLI interface and execution loop
+
 ai_connector.py     <- Switchable backend (OpenAI, Gemini, Claude, etc)
+
 
 🧪 What Makes Nemo Unique
 
